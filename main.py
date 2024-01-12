@@ -14,3 +14,10 @@ def swap(var1, var2):
     print(f'Var1: {var1}')
     print(f'Var2: {var2}')
 swap('Toast', 'French')
+
+# Day 2 - Create a program to calculate the area of a circle given its radius.
+import math
+def area_of_circle(radius):
+    area = math.pi * radius ** 2
+    return f'{area:.2f}'
+print(area_of_circle(5))
