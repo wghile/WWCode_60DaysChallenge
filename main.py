@@ -21,3 +21,13 @@ def area_of_circle(radius):
     area = math.pi * radius ** 2
     return f'{area:.2f}'
 print(area_of_circle(5))
+
+# Day3 - Write a function to count the number of vowels in a given string
+string = input('Enter a word: ').lower()
+vowels = ['a', 'e', 'i', 'o', 'u']
+vowel_count = 0
+for vowel in vowels:
+    for letter in string:
+        if letter == vowel:
+            vowel_count += 1
+print(f'{string} has {vowel_count} vowels')
