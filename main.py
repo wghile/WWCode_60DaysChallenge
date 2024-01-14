@@ -31,3 +31,15 @@ for vowel in vowels:
         if letter == vowel:
             vowel_count += 1
 print(f'{string} has {vowel_count} vowels')
+
+# Day 4 - Write a program to find the sum of all elements in a list.
+import random
+nums_list = []
+for i in range(5):      # created list of random integers
+    random_num = random.randint(0, 50)
+    nums_list.append(random_num)
+sum = 0
+for num in nums_list:
+    sum += num
+print(f'The sum of {nums_list} is {sum}')
+    
