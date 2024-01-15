@@ -42,4 +42,18 @@ sum = 0
 for num in nums_list:
     sum += num
 print(f'The sum of {nums_list} is {sum}')
-    
+
+# Day 5 - Write a program to find the maximum and minimum values in a list
+import random
+random_list = []
+for i in range(10):
+    random_num = random.randint(0, 12)
+    random_list.append(random_num)
+max = 0
+min = random_list[0]
+for num in random_list:
+    if num >= max:
+        max = num
+    if num <= min:
+        min = num
+print(f'The min and max of {random_list} is {min} and {max}, respectively')
