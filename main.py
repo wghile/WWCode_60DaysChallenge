@@ -57,3 +57,9 @@ for num in random_list:
     if num <= min:
         min = num
 print(f'The min and max of {random_list} is {min} and {max}, respectively')
+
+# Day 6 - Write a program to count the occurrences of a specific character in a string.
+char = input('Enter character: ')
+string = 'magnificient'
+count = string.count(char)
+print(count)
