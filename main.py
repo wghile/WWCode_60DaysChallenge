@@ -74,15 +74,27 @@
 #     print('Your number is negative')
 
 # Day 8 - Write a function that accepts a string and calculates the number of uppercase and lowercase letters in it.
-def upper_or_lower(string):
-    lower_case = 'abcdefghijklmnopqrstuvwxyz'
-    lower_case_count = 0
-    upper_case_count = 0
-    for letter in string:
-        for char in lower_case:
-            if letter == char:
-                lower_case_count += 1
-            elif letter == char.upper():
-                upper_case_count += 1
-    print(f'{string} has {upper_case_count} uppercase letters and {lower_case_count} lowercase latters')
-upper_or_lower('MONGOLIa')
+# def upper_or_lower(string):
+#     lower_case = 'abcdefghijklmnopqrstuvwxyz'
+#     lower_case_count = 0
+#     upper_case_count = 0
+#     for letter in string:
+#         for char in lower_case:
+#             if letter == char:
+#                 lower_case_count += 1
+#             elif letter == char.upper():
+#                 upper_case_count += 1
+#     print(f'{string} has {upper_case_count} uppercase letters and {lower_case_count} lowercase latters')
+# upper_or_lower('MONGOLIa')
+
+# Day 9 - Write a program to check if a number is even or odd.
+def even_or_odd(num):
+    if num == 0:
+        print('Neither')
+    elif num % 2 == 0:
+        print('Even')
+    else:
+        print('Odd')
+even_or_odd(0)
+even_or_odd(100)
+even_or_odd(25)
