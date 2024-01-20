@@ -88,13 +88,25 @@
 # upper_or_lower('MONGOLIa')
 
 # Day 9 - Write a program to check if a number is even or odd.
-def even_or_odd(num):
-    if num == 0:
-        print('Neither')
-    elif num % 2 == 0:
-        print('Even')
-    else:
-        print('Odd')
-even_or_odd(0)
-even_or_odd(100)
-even_or_odd(25)
+# def even_or_odd(num):
+#     if num == 0:
+#         print('Neither')
+#     elif num % 2 == 0:
+#         print('Even')
+#     else:
+#         print('Odd')
+# even_or_odd(0)
+# even_or_odd(100)
+# even_or_odd(25)
+
+# Day 10 - Write a program to remove duplicates from a list.
+duplicates_list = [35, 99, 2, 53, 14, 10, 128, 14, 2]
+# print(dir(duplicates_list))
+duplicates_list.sort()
+print(duplicates_list)
+i = 0
+while i < len(duplicates_list) - 1:
+    if duplicates_list[i] == duplicates_list[i+1]:
+        duplicates_list.pop(i+1)
+    i+= 1
+print(duplicates_list)
