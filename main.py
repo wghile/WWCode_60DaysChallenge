@@ -100,13 +100,18 @@
 # even_or_odd(25)
 
 # Day 10 - Write a program to remove duplicates from a list.
-duplicates_list = [35, 99, 2, 53, 14, 10, 128, 14, 2]
-# print(dir(duplicates_list))
-duplicates_list.sort()
-print(duplicates_list)
-i = 0
-while i < len(duplicates_list) - 1:
-    if duplicates_list[i] == duplicates_list[i+1]:
-        duplicates_list.pop(i+1)
-    i+= 1
-print(duplicates_list)
+# duplicates_list = [35, 99, 2, 53, 14, 10, 128, 14, 2]
+# # print(dir(duplicates_list))
+# duplicates_list.sort()
+# print(duplicates_list)
+# i = 0
+# while i < len(duplicates_list) - 1:
+#     if duplicates_list[i] == duplicates_list[i+1]:
+#         duplicates_list.pop(i+1)
+#     i+= 1
+# print(duplicates_list)
+
+# Day 11 - Write a program to print the multiplication table of a given number.
+number = int(input('Enter a number: '))
+for i in range(11):
+    print(f'{number} x {i} = {number * i}')
