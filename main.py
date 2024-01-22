@@ -112,6 +112,14 @@
 # print(duplicates_list)
 
 # Day 11 - Write a program to print the multiplication table of a given number.
-number = int(input('Enter a number: '))
-for i in range(11):
-    print(f'{number} x {i} = {number * i}')
+# number = int(input('Enter a number: '))
+# for i in range(11):
+#     print(f'{number} x {i} = {number * i}')
+
+# Day 12 - Write a program to reverse a given string.
+string = input('Enter a string: ')
+reverse_string = ''
+# print(dir(str))
+for i in range(len(string) - 1, -1, -1):
+    reverse_string += string[i]
+print(reverse_string)
