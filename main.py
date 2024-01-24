@@ -117,9 +117,19 @@
 #     print(f'{number} x {i} = {number * i}')
 
 # Day 12 - Write a program to reverse a given string.
-string = input('Enter a string: ')
-reverse_string = ''
-# print(dir(str))
-for i in range(len(string) - 1, -1, -1):
-    reverse_string += string[i]
-print(reverse_string)
+# string = input('Enter a string: ')
+# reverse_string = ''
+# # print(dir(str))
+# for i in range(len(string) - 1, -1, -1):
+#     reverse_string += string[i]
+# print(reverse_string)
+
+# Day 13 - Write a program to shuffle the elements of a list randomly.
+import random
+list = ['hi', 'bye', 'there', 'where', 'dare']
+shuffled_list = []
+while len(list) > 0:
+    random_element = random.choice(list)
+    shuffled_list.append(random_element)
+    list.remove(random_element)
+print(shuffled_list)
