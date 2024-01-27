@@ -126,10 +126,21 @@
 
 # Day 13 - Write a program to shuffle the elements of a list randomly.
 import random
-list = ['hi', 'bye', 'there', 'where', 'dare']
-shuffled_list = []
-while len(list) > 0:
-    random_element = random.choice(list)
-    shuffled_list.append(random_element)
-    list.remove(random_element)
-print(shuffled_list)
+# list = ['hi', 'bye', 'there', 'where', 'dare']
+# shuffled_list = []
+# while len(list) > 0:
+#     random_element = random.choice(list)
+#     shuffled_list.append(random_element)
+#     list.remove(random_element)
+# print(shuffled_list)
+
+# Day 14 - Write a program to print the first n numbers of a Fibonacci sequence.
+def fibonacci(n):
+    sequence = [0, 1]
+    i = 0
+    while len(sequence) < n:
+        sum = sequence[i] + sequence[i+1]
+        sequence.append(sum)
+        i += 1
+    return sequence
+print(fibonacci(10))
