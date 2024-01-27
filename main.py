@@ -135,12 +135,22 @@ import random
 # print(shuffled_list)
 
 # Day 14 - Write a program to print the first n numbers of a Fibonacci sequence.
-def fibonacci(n):
-    sequence = [0, 1]
-    i = 0
-    while len(sequence) < n:
-        sum = sequence[i] + sequence[i+1]
-        sequence.append(sum)
-        i += 1
-    return sequence
-print(fibonacci(10))
+# def fibonacci(n):
+#     sequence = [0, 1]
+#     i = 0
+#     while len(sequence) < n:
+#         sum = sequence[i] + sequence[i+1]
+#         sequence.append(sum)
+#         i += 1
+#     return sequence
+# print(fibonacci(10))
+
+# Day 15 - Create a program that checks if a year is a leap year.
+# def leap_year_check(year):
+#     if year > 0 and year % 4 == 0:
+#         print(f'{year} is a leap year')
+#     elif year > 0 and year % 4 != 0:
+#         print(f'{year} is NOT a leap year')
+#     else:
+#         print('Error: Please enter a valid year')
+# leap_year_check(2024)
