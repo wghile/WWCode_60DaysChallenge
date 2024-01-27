@@ -154,3 +154,11 @@ import random
 #     else:
 #         print('Error: Please enter a valid year')
 # leap_year_check(2024)
+
+# Day 16 - Write a program that counts the frequency of each word in a sentence.
+# sentence = input('Enter a sentence: ')
+# sentence_list = sentence.split(' ')
+# words_dict = dict()
+# for word in sentence_list:
+#     words_dict[word] = sentence_list.count(word)
+# print(words_dict)
