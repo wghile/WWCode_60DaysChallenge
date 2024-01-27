@@ -162,3 +162,12 @@ import random
 # for word in sentence_list:
 #     words_dict[word] = sentence_list.count(word)
 # print(words_dict)
+
+# Day 17 - Write a program that capitalizes the first letter of each word in a sentence.
+sentence = input('Enter a sentence: ')
+sentence_list = sentence.split(' ')
+new_sentence = ''
+for i in range(len(sentence_list)):
+    capitalized_word = sentence_list[i].replace(sentence_list[i], sentence_list[i].title())
+    new_sentence += capitalized_word + ' '
+print(new_sentence)
