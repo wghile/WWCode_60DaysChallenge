@@ -135,22 +135,22 @@ import random
 # print(shuffled_list)
 
 # Day 14 - Write a program to print the first n numbers of a Fibonacci sequence.
-def fibonacci(n):
-    sequence = [0, 1]
-    if n == 0:
-        return []
-    elif n == 1:
-        return sequence[:1]
-    elif n == 2:
-        return sequence[:2]
-    else:
-        i = 0
-        while len(sequence) < n:
-            sum = sequence[i] + sequence[i+1]
-            sequence.append(sum)
-            i += 1
-        return sequence
-print(fibonacci(10))
+# def fibonacci(n):
+#     sequence = [0, 1]
+#     if n == 0:
+#         return []
+#     elif n == 1:
+#         return sequence[:1]
+#     elif n == 2:
+#         return sequence[:2]
+#     else:
+#         i = 0
+#         while len(sequence) < n:
+#             sum = sequence[i] + sequence[i+1]
+#             sequence.append(sum)
+#             i += 1
+#         return sequence
+# print(fibonacci(10))
 
 # Day 15 - Create a program that checks if a year is a leap year.
 # def leap_year_check(year):
@@ -178,3 +178,10 @@ print(fibonacci(10))
 #     capitalized_word = sentence_list[i].replace(sentence_list[i], sentence_list[i].title())
 #     new_sentence += capitalized_word + ' '
 # print(new_sentence)
+
+# Day 18 - Create a program to find the largest among three numbers.
+def largest_num(num1, num2, num3):
+    numbers = [num1, num2, num3]
+    numbers.sort()
+    return numbers[2]
+print(largest_num(99, 500, 120))
