@@ -187,9 +187,22 @@ import random
 # print(largest_num(99, 500, 120))
 
 # Day 19 - Write a function to calculate the factorial of a number.
-def factorial(n):
-    product = 1
-    for i in range(1, n+1):
-        product = product * i
-    return product
-print(factorial(6))
+# def factorial(n):
+#     product = 1
+#     for i in range(1, n+1):
+#         product = product * i
+#     return product
+# print(factorial(6))
+
+# Day 20 - Write a function that takes a list of numbers and returns a new list containing only the even numbers.
+import random
+random_list = []
+for i in range(10):
+    random_num = random.randint(1, 100)
+    random_list.append(random_num)
+print(random_list)
+even_list = []
+for num in random_list:
+    if num % 2 == 0:
+        even_list.append(num)
+print(f'Even Numbers: {even_list}')
