@@ -180,8 +180,16 @@ import random
 # print(new_sentence)
 
 # Day 18 - Create a program to find the largest among three numbers.
-def largest_num(num1, num2, num3):
-    numbers = [num1, num2, num3]
-    numbers.sort()
-    return numbers[2]
-print(largest_num(99, 500, 120))
+# def largest_num(num1, num2, num3):
+#     numbers = [num1, num2, num3]
+#     numbers.sort()
+#     return numbers[2]
+# print(largest_num(99, 500, 120))
+
+# Day 19 - Write a function to calculate the factorial of a number.
+def factorial(n):
+    product = 1
+    for i in range(1, n+1):
+        product = product * i
+    return product
+print(factorial(6))
