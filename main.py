@@ -195,14 +195,23 @@ import random
 # print(factorial(6))
 
 # Day 20 - Write a function that takes a list of numbers and returns a new list containing only the even numbers.
-import random
-random_list = []
-for i in range(10):
-    random_num = random.randint(1, 100)
-    random_list.append(random_num)
-print(random_list)
-even_list = []
-for num in random_list:
-    if num % 2 == 0:
-        even_list.append(num)
-print(f'Even Numbers: {even_list}')
+# import random
+# random_list = []
+# for i in range(10):
+#     random_num = random.randint(1, 100)
+#     random_list.append(random_num)
+# print(random_list)
+# even_list = []
+# for num in random_list:
+#     if num % 2 == 0:
+#         even_list.append(num)
+# print(f'Even Numbers: {even_list}')
+
+# Day 21 - Create a program to remove a specific element from a set.
+shopping_list = ['blanket', 'towel', 'trash can', 'sofa', 'blender']
+remove_item = input('Enter an item to remove from shopping list: ').lower()
+if remove_item in shopping_list:
+    shopping_list.remove(remove_item)
+    print(shopping_list)
+else:
+    print('Item not found in shopping list')
