@@ -208,10 +208,19 @@ import random
 # print(f'Even Numbers: {even_list}')
 
 # Day 21 - Create a program to remove a specific element from a set.
-shopping_list = ['blanket', 'towel', 'trash can', 'sofa', 'blender']
-remove_item = input('Enter an item to remove from shopping list: ').lower()
-if remove_item in shopping_list:
-    shopping_list.remove(remove_item)
-    print(shopping_list)
-else:
-    print('Item not found in shopping list')
+# shopping_list = ['blanket', 'towel', 'trash can', 'sofa', 'blender']
+# remove_item = input('Enter an item to remove from shopping list: ').lower()
+# if remove_item in shopping_list:
+#     shopping_list.remove(remove_item)
+#     print(shopping_list)
+# else:
+#     print('Item not found in shopping list')
+
+# Day 22 - Create a program to find the second-largest element in a list.
+import random
+random_list = []
+for i in range(8):
+    random_num = random.randint(1, 25)
+    random_list.append(random_num)
+random_list.sort()
+print(f'The second-largest element of {random_list} is {random_list[-2]}')
