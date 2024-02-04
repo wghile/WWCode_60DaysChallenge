@@ -234,15 +234,20 @@ import random
 # print(key_check({'hi': 'bye', 'there': 'their'}, 'hi'))
 
 # Day 24 - Write a program to remove vowels from a given string.
-def remove_vowels(string):
-    vowels = 'aeiou'
-    new_string = ''
-    i = 0
-    while i < len(string):
-        if string[i] in vowels:
-            i += 1
-        else:
-            new_string += string[i]
-            i += 1
-    return new_string
-print(remove_vowels('walrus'))
+# def remove_vowels(string):
+#     vowels = 'aeiou'
+#     new_string = ''
+#     i = 0
+#     while i < len(string):
+#         if string[i] in vowels:
+#             i += 1
+#         else:
+#             new_string += string[i]
+#             i += 1
+#     return new_string
+# print(remove_vowels('walrus'))
+
+# Day 25 - Create a program to concatenate two lists.
+def concat_lists(list1, list2):
+    return list1 + list2
+print(concat_lists(['there goes my'], ['baby']))
