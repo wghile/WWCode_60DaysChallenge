@@ -226,9 +226,23 @@ import random
 # print(f'The second-largest element of {random_list} is {random_list[-2]}')
 
 # Day 23 - Write a program that checks if a key exists in a dictionary.
-def key_check(dictionary, key):
-    if key in dictionary:
-        return True
-    else:
-        return False
-print(key_check({'hi': 'bye', 'there': 'their'}, 'hi'))
+# def key_check(dictionary, key):
+#     if key in dictionary:
+#         return True
+#     else:
+#         return False
+# print(key_check({'hi': 'bye', 'there': 'their'}, 'hi'))
+
+# Day 24 - Write a program to remove vowels from a given string.
+def remove_vowels(string):
+    vowels = 'aeiou'
+    new_string = ''
+    i = 0
+    while i < len(string):
+        if string[i] in vowels:
+            i += 1
+        else:
+            new_string += string[i]
+            i += 1
+    return new_string
+print(remove_vowels('walrus'))
