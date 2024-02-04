@@ -217,10 +217,18 @@ import random
 #     print('Item not found in shopping list')
 
 # Day 22 - Create a program to find the second-largest element in a list.
-import random
-random_list = []
-for i in range(8):
-    random_num = random.randint(1, 25)
-    random_list.append(random_num)
-random_list.sort()
-print(f'The second-largest element of {random_list} is {random_list[-2]}')
+# import random
+# random_list = []
+# for i in range(8):
+#     random_num = random.randint(1, 25)
+#     random_list.append(random_num)
+# random_list.sort()
+# print(f'The second-largest element of {random_list} is {random_list[-2]}')
+
+# Day 23 - Write a program that checks if a key exists in a dictionary.
+def key_check(dictionary, key):
+    if key in dictionary:
+        return True
+    else:
+        return False
+print(key_check({'hi': 'bye', 'there': 'their'}, 'hi'))
