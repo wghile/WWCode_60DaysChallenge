@@ -248,6 +248,14 @@ import random
 # print(remove_vowels('walrus'))
 
 # Day 25 - Create a program to concatenate two lists.
-def concat_lists(list1, list2):
-    return list1 + list2
-print(concat_lists(['there goes my'], ['baby']))
+# def concat_lists(list1, list2):
+#     return list1 + list2
+# print(concat_lists(['there goes my'], ['baby']))
+
+# Day 26 - Create a program that uses a lambda function to square each element of a list.
+    # lambda function is an anonymous function
+    # syntax: lambda argument(s) : expression
+        # invoke function using parenthesis followed by value in parentheses
+    # filter(function, iterable) and map(function, iterable)
+        # both methods will return an object
+list(map(lambda element : print(element ** 2), [2, 4, 6, 8]))
