@@ -258,4 +258,12 @@ import random
         # invoke function using parenthesis followed by value in parentheses
     # filter(function, iterable) and map(function, iterable)
         # both methods will return an object
-list(map(lambda element : print(element ** 2), [2, 4, 6, 8]))
+# list(map(lambda element : print(element ** 2), [2, 4, 6, 8]))
+
+# Day 27 - Create a program that sorts a list of strings alphabetically.
+list_of_strings = []
+for i in range(3):
+    string = input('Enter a string: ')
+    list_of_strings.append(string)
+list_of_strings.sort()
+print(list_of_strings)
