@@ -261,9 +261,18 @@ import random
 # list(map(lambda element : print(element ** 2), [2, 4, 6, 8]))
 
 # Day 27 - Create a program that sorts a list of strings alphabetically.
-list_of_strings = []
-for i in range(3):
-    string = input('Enter a string: ')
-    list_of_strings.append(string)
-list_of_strings.sort()
-print(list_of_strings)
+# list_of_strings = []
+# for i in range(3):
+#     string = input('Enter a string: ')
+#     list_of_strings.append(string)
+# list_of_strings.sort()
+# print(list_of_strings)
+
+# Day 28 - Create a program that removes the nth element from a list.
+def remove_from_list(n, list):
+    if n < 0 or n >= len(list):
+        return 'Error: please enter valid index'
+    else:
+        list.pop(n)
+        return list
+print(remove_from_list(3, ['chocolate', 'strawberry', 'coconut', 'vanilla bean']))
