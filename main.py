@@ -278,7 +278,25 @@ import random
 # print(remove_from_list(3, ['chocolate', 'strawberry', 'coconut', 'vanilla bean']))
 
 # Day 29 - Create a function that generates a random number between a given range.
-def random_number(min, max):
-    import random
-    return random.randint(min, max)
-print(random_number(10, 20))
+# def random_number(min, max):
+#     import random
+#     return random.randint(min, max)
+# print(random_number(10, 20))
+
+# Day 30 - Create a function that finds the second smallest element in a list.
+# def second_smallest(lst):
+#     lst.sort()
+#     return lst[1]
+# print(second_smallest([0, 89, 100, 33, 9, 3, 899]))
+
+# Day 31 - Create a program that checks if a given string is a valid email address.
+email_domains = ['@gmail.com', '@yahoo.com', '@aol.com']
+email = input('What is your email? ')
+def email_check(email=email):
+    domain_start_index = email.find('@')
+    email_domain = email[domain_start_index:]
+    if email_domain in email_domains:
+        print('Valid Email')
+    else:
+        print('Not a Valid Email')
+email_check()
