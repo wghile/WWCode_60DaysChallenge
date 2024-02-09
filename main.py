@@ -269,10 +269,16 @@ import random
 # print(list_of_strings)
 
 # Day 28 - Create a program that removes the nth element from a list.
-def remove_from_list(n, list):
-    if n < 0 or n >= len(list):
-        return 'Error: please enter valid index'
-    else:
-        list.pop(n)
-        return list
-print(remove_from_list(3, ['chocolate', 'strawberry', 'coconut', 'vanilla bean']))
+# def remove_from_list(n, list):
+#     if n < 0 or n >= len(list):
+#         return 'Error: please enter valid index'
+#     else:
+#         list.pop(n)
+#         return list
+# print(remove_from_list(3, ['chocolate', 'strawberry', 'coconut', 'vanilla bean']))
+
+# Day 29 - Create a function that generates a random number between a given range.
+def random_number(min, max):
+    import random
+    return random.randint(min, max)
+print(random_number(10, 20))
