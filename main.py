@@ -290,13 +290,21 @@ import random
 # print(second_smallest([0, 89, 100, 33, 9, 3, 899]))
 
 # Day 31 - Create a program that checks if a given string is a valid email address.
-email_domains = ['@gmail.com', '@yahoo.com', '@aol.com']
-email = input('What is your email? ')
-def email_check(email=email):
-    domain_start_index = email.find('@')
-    email_domain = email[domain_start_index:]
-    if email_domain in email_domains:
-        print('Valid Email')
-    else:
-        print('Not a Valid Email')
-email_check()
+# email_domains = ['@gmail.com', '@yahoo.com', '@aol.com']
+# email = input('What is your email? ')
+# def email_check(email=email):
+#     domain_start_index = email.find('@')
+#     email_domain = email[domain_start_index:]
+#     if email_domain in email_domains:
+#         print('Valid Email')
+#     else:
+#         print('Not a Valid Email')
+# email_check()
+
+# Day 32 - Create a function that calculates the average of a list of numbers.
+def average(lst):
+    sum = 0
+    for item in lst:
+        sum += item
+    print(sum / len(lst))
+average([1,2,3,6,8])
