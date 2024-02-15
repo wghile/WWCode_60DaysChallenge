@@ -302,9 +302,18 @@ import random
 # email_check()
 
 # Day 32 - Create a function that calculates the average of a list of numbers.
-def average(lst):
-    sum = 0
-    for item in lst:
-        sum += item
-    print(sum / len(lst))
-average([1,2,3,6,8])
+# def average(lst):
+#     sum = 0
+#     for item in lst:
+#         sum += item
+#     print(sum / len(lst))
+# average([1,2,3,6,8])
+
+# Day 33 - Write a test case for a function that checks if a number is prime.
+import unittest
+class TestPrime(unittest.TestCase):
+    def test_is_prime(self):
+        num = int(input('Enter a number: '))
+        self.assertTrue(num == 0 or num % 2 == 0 or num % 3 == 0 or num % 5 == 0 or num % 7 == 0 or num % 9 == 0, f'{num} IS prime')
+if __name__ == '__main__':
+    unittest.main()
