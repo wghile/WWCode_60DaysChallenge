@@ -310,10 +310,27 @@ import random
 # average([1,2,3,6,8])
 
 # Day 33 - Write a test case for a function that checks if a number is prime.
+num = int(input('Enter a number: '))
+def is_prime(num=num):
+    if num == 0 or num % 2 == 0 or num % 3 == 0 or num % 5 == 0 or num % 7 == 0 or num % 9 == 0:
+        return False
+    else:
+        return True
+
 import unittest
 class TestPrime(unittest.TestCase):
     def test_is_prime(self):
-        num = int(input('Enter a number: '))
-        self.assertTrue(num == 0 or num % 2 == 0 or num % 3 == 0 or num % 5 == 0 or num % 7 == 0 or num % 9 == 0, f'{num} IS prime')
+        self.assertTrue(is_prime(), f'{num} is NOT prime')
+        self.assertFalse(is_prime(), f'{num} IS prime')
 if __name__ == '__main__':
     unittest.main()
+   
+# Day 34 - Write a Python program to merge two dictionaries.
+# def merge(dict1, dict2):
+#     if type(dict1) != dict or type(dict2) != dict:
+#         raise TypeError('Incorrect argument type(s)')
+#     else:
+#         for key in dict2.keys():
+#             dict1[key] = dict2[key]
+#         return dict1
+# print(merge({1: 2, 2: 3}, {4: 5, 6: 8}))
