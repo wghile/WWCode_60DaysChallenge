@@ -326,11 +326,23 @@ import random
 #     unittest.main()
    
 # Day 34 - Write a Python program to merge two dictionaries.
-def merge(dict1, dict2):
-    if type(dict1) != dict or type(dict2) != dict:
-        raise TypeError('Incorrect argument type(s)')
-    else:
-        for key in dict2.keys():
-            dict1[key] = dict2[key]
-        return dict1
-print(merge({1: 2, 2: 3}, {4: 5, 6: 8}))
+# def merge(dict1, dict2):
+#     if type(dict1) != dict or type(dict2) != dict:
+#         raise TypeError('Incorrect argument type(s)')
+#     else:
+#         for key in dict2.keys():
+#             dict1[key] = dict2[key]
+#         return dict1
+# print(merge({1: 2, 2: 3}, {4: 5, 6: 8}))
+
+# Day 35 - Write a simple unit test for a function that adds two numbers.
+def add_nums(num1, num2):
+    return num1 + num2
+import unittest
+class TestSum(unittest.TestCase):
+    def test_sum(self):
+        num1 = int(input('Enter a number: '))
+        num2 = int(input('Enter a number: '))
+        self.assertEqual(add_nums(num1=num1, num2=num2), num1 - num2, msg='Not Equal')
+if __name__ == '__main__':
+    unittest.main()
