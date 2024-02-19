@@ -349,14 +349,23 @@ import random
 
 # Day 36 - Write a Python program to check if two strings are anagrams.
     # anagram = word that can be made from rearranging another word (i.e. cinema and iceman)
-def is_anagram(str1, str2):
-    i = 0
-    while (i < len(str1)):
-        if str1.count(str1[i]) != str2.count(str1[i]):
-            result = f'{str1} and {str2} are NOT anagrams'
-            break
-        else:
-            i += 1
-            result = f'{str1} and {str2} are anagrams'
-    print(result)
-is_anagram('icemun', 'cinema')
+# def is_anagram(str1, str2):
+#     i = 0
+#     while (i < len(str1)):
+#         if str1.count(str1[i]) != str2.count(str1[i]):
+#             result = f'{str1} and {str2} are NOT anagrams'
+#             break
+#         else:
+#             i += 1
+#             result = f'{str1} and {str2} are anagrams'
+#     print(result)
+# is_anagram('icemun', 'cinema')
+
+# Day 37 - Write a program to iterate through a dictionary and print its keys and values.
+def keys_values(dict1):
+    if type(dict1) != dict:
+        raise TypeError('Input must be a dictionary')
+    else:
+        for key in dict1.keys():
+            print(f'{key}: {dict1[key]}')
+keys_values({'chocolate': 5, 'strawberry': 10, 'mango': 2})
