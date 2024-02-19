@@ -336,13 +336,27 @@ import random
 # print(merge({1: 2, 2: 3}, {4: 5, 6: 8}))
 
 # Day 35 - Write a simple unit test for a function that adds two numbers.
-def add_nums(num1, num2):
-    return num1 + num2
-import unittest
-class TestSum(unittest.TestCase):
-    def test_sum(self):
-        num1 = int(input('Enter a number: '))
-        num2 = int(input('Enter a number: '))
-        self.assertEqual(add_nums(num1=num1, num2=num2), num1 - num2, msg='Not Equal')
-if __name__ == '__main__':
-    unittest.main()
+# def add_nums(num1, num2):
+#     return num1 + num2
+# import unittest
+# class TestSum(unittest.TestCase):
+#     def test_sum(self):
+#         num1 = int(input('Enter a number: '))
+#         num2 = int(input('Enter a number: '))
+#         self.assertEqual(add_nums(num1=num1, num2=num2), num1 - num2, msg='Not Equal')
+# if __name__ == '__main__':
+#     unittest.main()
+
+# Day 36 - Write a Python program to check if two strings are anagrams.
+    # anagram = word that can be made from rearranging another word (i.e. cinema and iceman)
+def is_anagram(str1, str2):
+    i = 0
+    while (i < len(str1)):
+        if str1.count(str1[i]) != str2.count(str1[i]):
+            result = f'{str1} and {str2} are NOT anagrams'
+            break
+        else:
+            i += 1
+            result = f'{str1} and {str2} are anagrams'
+    print(result)
+is_anagram('icemun', 'cinema')
