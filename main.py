@@ -362,10 +362,22 @@ import random
 # is_anagram('icemun', 'cinema')
 
 # Day 37 - Write a program to iterate through a dictionary and print its keys and values.
-def keys_values(dict1):
-    if type(dict1) != dict:
-        raise TypeError('Input must be a dictionary')
-    else:
-        for key in dict1.keys():
-            print(f'{key}: {dict1[key]}')
-keys_values({'chocolate': 5, 'strawberry': 10, 'mango': 2})
+# def keys_values(dict1):
+#     if type(dict1) != dict:
+#         raise TypeError('Input must be a dictionary')
+#     else:
+#         for key in dict1.keys():
+#             print(f'{key}: {dict1[key]}')
+# keys_values({'chocolate': 5, 'strawberry': 10, 'mango': 2})
+
+# Day 38 - Write a program to flatten a nested list.
+def flatten_nested_list(lst):
+    flat = []
+    for el in lst:
+        if type(el) == int:
+            flat.append(el)
+        else:
+            for sub_el in el:
+                flat.append(sub_el)
+    print(flat)
+flatten_nested_list([1, [2, 3], [4, 5, 6]])
