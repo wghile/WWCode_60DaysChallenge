@@ -383,17 +383,27 @@ import random
 # flatten_nested_list([1, [2, 3], [4, 5, 6]])
 
 # Day 39 - Write a program to find the most common words in a text file.
-with open('Python60_2024/words.txt') as text_file:
-    contents = text_file.read()     # returns a string
-words = contents.split('\n')
-words_dict = {}
-for word in words:
-    words_dict[word] = words.count(word)     # counting the occurrence of each unique word in the text file
-max_value = max(list(words_dict.values()))      # finding the max occurrence = most common word(s)
-common_words = []
-for key in words_dict.keys():
-    if words_dict[key] == max_value:            # finding the word from the max value in dict
-        common_words.append(key)
-print('The most common word(s) in the text file:')
-for word in common_words:
-    print(f' {word}')
+# with open('Python60_2024/words.txt') as text_file:
+#     contents = text_file.read()     # returns a string
+# words = contents.split('\n')
+# words_dict = {}
+# for word in words:
+#     words_dict[word] = words.count(word)     # counting the occurrence of each unique word in the text file
+# max_value = max(list(words_dict.values()))      # finding the max occurrence = most common word(s)
+# common_words = []
+# for key in words_dict.keys():
+#     if words_dict[key] == max_value:            # finding the word from the max value in dict
+#         common_words.append(key)
+# print('The most common word(s) in the text file:')
+# for word in common_words:
+#     print(f' {word}')
+
+# Day 40 - Write a function to find the largest common divisor of two numbers using a function.
+def largest_divisor(num1, num2):
+    i = 1
+    while i <= num1:
+        if num1 % i == 0 and num2 % i == 0:
+            max_divisor = i
+        i += 1
+    print(f'The largest common divisor of {num1} and {num2} is {max_divisor}')
+largest_divisor(25, 35)
