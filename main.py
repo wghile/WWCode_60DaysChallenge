@@ -409,19 +409,27 @@ import random
 # largest_divisor(25, 35)
 
 # Day 41 - Write a program that uses recursion to generate all permutations of a list.
-import random
-def factorial(n):
-    if n == 1:
-        return 1
-    else:
-        return n * factorial(n - 1)
-permutations_list = []
-def permutations(lst):
-    while len(permutations_list) < factorial(len(lst)):
-        if lst not in permutations_list:
-            permutations_list.append(lst)
-        else:
-            permutations(random.sample(lst, k=len(lst)))
-permutations([1,2,3,4])
-for i in range(len(permutations_list)):
-    print(f'{i + 1}) {permutations_list[i]}')
+# import random
+# def factorial(n):
+#     if n == 1:
+#         return 1
+#     else:
+#         return n * factorial(n - 1)
+# permutations_list = []
+# def permutations(lst):
+#     while len(permutations_list) < factorial(len(lst)):
+#         if lst not in permutations_list:
+#             permutations_list.append(lst)
+#         else:
+#             permutations(random.sample(lst, k=len(lst)))
+# permutations([1,2,3,4])
+# for i in range(len(permutations_list)):
+#     print(f'{i + 1}) {permutations_list[i]}')
+
+# Day 42 - Write a program that uses a try-except block to handle division by zero.
+def division(num1, num2):
+    try:
+        return num1 / num2
+    except:
+        return 'Can\'t divide by 0'
+print(division(9,0))
