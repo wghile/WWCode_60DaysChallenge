@@ -399,11 +399,29 @@ import random
 #     print(f' {word}')
 
 # Day 40 - Write a function to find the largest common divisor of two numbers using a function.
-def largest_divisor(num1, num2):
-    i = 1
-    while i <= num1:
-        if num1 % i == 0 and num2 % i == 0:
-            max_divisor = i
-        i += 1
-    print(f'The largest common divisor of {num1} and {num2} is {max_divisor}')
-largest_divisor(25, 35)
+# def largest_divisor(num1, num2):
+#     i = 1
+#     while i <= num1:
+#         if num1 % i == 0 and num2 % i == 0:
+#             max_divisor = i
+#         i += 1
+#     print(f'The largest common divisor of {num1} and {num2} is {max_divisor}')
+# largest_divisor(25, 35)
+
+# Day 41 - Write a program that uses recursion to generate all permutations of a list.
+import random
+def factorial(n):
+    if n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+permutations_list = []
+def permutations(lst):
+    while len(permutations_list) < factorial(len(lst)):
+        if lst not in permutations_list:
+            permutations_list.append(lst)
+        else:
+            permutations(random.sample(lst, k=len(lst)))
+permutations([1,2,3,4])
+for i in range(len(permutations_list)):
+    print(f'{i + 1}) {permutations_list[i]}')
