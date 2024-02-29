@@ -427,9 +427,18 @@ import random
 #     print(f'{i + 1}) {permutations_list[i]}')
 
 # Day 42 - Write a program that uses a try-except block to handle division by zero.
-def division(num1, num2):
-    try:
-        return num1 / num2
-    except:
-        return 'Can\'t divide by 0'
-print(division(9,0))
+# def division(num1, num2):
+#     try:
+#         return num1 / num2
+#     except:
+#         return 'Can\'t divide by 0'
+# print(division(9,0))
+
+# Day 43 - Write a program that removes all whitespaces from a given string.
+def trim_string(string):
+    new_string = ''
+    for el in string:
+        if el != ' ':
+            new_string += el
+    return new_string
+print(trim_string('  Hi there'))
