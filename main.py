@@ -435,10 +435,18 @@ import random
 # print(division(9,0))
 
 # Day 43 - Write a program that removes all whitespaces from a given string.
-def trim_string(string):
-    new_string = ''
-    for el in string:
-        if el != ' ':
-            new_string += el
-    return new_string
-print(trim_string('  Hi there'))
+# def trim_string(string):
+#     new_string = ''
+#     for el in string:
+#         if el != ' ':
+#             new_string += el
+#     return new_string
+# print(trim_string('  Hi there'))
+
+# Day 44 - Write a program that reads an integer from the user and handles invalid inputs
+def integer_check(num):
+    if type(num) == int:
+        return num
+    else:
+        raise TypeError('Invalid input')
+print(integer_check(5))
