@@ -444,9 +444,22 @@ import random
 # print(trim_string('  Hi there'))
 
 # Day 44 - Write a program that reads an integer from the user and handles invalid inputs
-def integer_check(num):
-    if type(num) == int:
-        return num
-    else:
-        raise TypeError('Invalid input')
-print(integer_check(5))
+# def integer_check(num):
+#     if type(num) == int:
+#         return num
+#     else:
+#         raise TypeError('Invalid input')
+# print(integer_check(5))
+
+# Day 45 - Write a function to check if a number is a prime number.
+try:
+    num = int(input('Enter an number: '))
+    def prime(num=num):
+        prime_list = [2, 3, 5, 7]
+        for item in prime_list:
+            if num % item == 0:
+                return f'{num} is NOT prime'
+        return f'{num} IS prime'
+    print(prime())
+except:
+    raise TypeError('Input must be a number')
