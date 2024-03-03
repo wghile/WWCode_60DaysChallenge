@@ -452,14 +452,22 @@ import random
 # print(integer_check(5))
 
 # Day 45 - Write a function to check if a number is a prime number.
-try:
-    num = int(input('Enter an number: '))
-    def prime(num=num):
-        prime_list = [2, 3, 5, 7]
-        for item in prime_list:
-            if num % item == 0:
-                return f'{num} is NOT prime'
-        return f'{num} IS prime'
-    print(prime())
-except:
-    raise TypeError('Input must be a number')
+# try:
+#     num = int(input('Enter an number: '))
+#     def prime(num=num):
+#         prime_list = [2, 3, 5, 7]
+#         for item in prime_list:
+#             if num % item == 0:
+#                 return f'{num} is NOT prime'
+#         return f'{num} IS prime'
+#     print(prime())
+# except:
+#     raise TypeError('Input must be a number')
+
+# Day 46 - Write a function to check if a given list is sorted.
+def sorted_list(lst):
+    if lst == sorted(lst):
+        return True
+    else:
+        return False
+print(sorted_list([10, 3, 4, 5, -9]))
