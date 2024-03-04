@@ -465,9 +465,16 @@ import random
 #     raise TypeError('Input must be a number')
 
 # Day 46 - Write a function to check if a given list is sorted.
-def sorted_list(lst):
-    if lst == sorted(lst):
-        return True
-    else:
-        return False
-print(sorted_list([10, 3, 4, 5, -9]))
+# def sorted_list(lst):
+#     if lst == sorted(lst):
+#         return True
+#     else:
+#         return False
+# print(sorted_list([10, 3, 4, 5, -9]))
+
+# Day 47 - Create a program that imports the math module and uses its functions.
+import math
+print(math.factorial(4))
+print(math.prod([1,2,3,4]))
+print(math.cbrt(27))
+print(math.gcd(10, 30))
